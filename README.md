@@ -261,12 +261,7 @@ Nova is currently in its active architecture, specification, and algorithm desig
 
 Nova is being actively researched and developed at **SRM Institute of Science and Technology, Tiruchirappalli**:
 
-- **Kirutiga G** — `RA2311008050003`
 - **Dinesh Kanna R** — `RA23110080500010` ([@Dineshkanna-FSDev](https://github.com/Dineshkanna-FSDev))
-- **Nithish M** — `RA23110080500033`
-
-**Project Supervisor:**
-- **Dr. Jubilant Kizhakkethottam** — Head of the Department, Department of Information Technology, SRM IST, Tiruchirappalli.
 
 ---
 
