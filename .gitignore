@@ -1,0 +1,38 @@
+# Rust
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# Nova build and cache artifacts
+.nova/
+.nova_cache/
+dist/
+build/
+out/
+
+# Node & Frontend dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment and IDE
+.env
+.env.local
+.env.*.local
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Office / Presentation temporary lock files
+~$*.docx
+~$*.pptx
+~$*.xlsx
+
+# Logs
+logs/
+*.log

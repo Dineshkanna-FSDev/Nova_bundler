@@ -1,0 +1,181 @@
+                React Source
+                      │
+                      ▼
+             Parallel File Scanner
+                      │
+                      ▼
+            Incremental Lexer (SIMD)
+                      │
+                      ▼
+            Parallel Parser (AST)
+                      │
+                      ▼
+          Persistent AST Cache
+                      │
+                      ▼
+        Semantic Analyzer + Type Graph
+                      │
+                      ▼
+          Compile-time Optimizer
+                      │
+                      ▼
+             Binary Intermediate
+              Representation (IR)
+                      │
+      ┌───────────────┼────────────────┐
+      │               │                │
+      ▼               ▼                ▼
+ Dependency      Asset Graph      Metadata Graph
+     Graph         Generator         Generator
+      │               │                │
+      └───────────────┼────────────────┘
+                      ▼
+            Parallel Optimization
+        • Tree Shaking
+        • Constant Folding
+        • Static Components
+        • Render Optimization
+        • CSS Optimization
+        • Asset Compression
+        • Automatic Memoization
+        • Automatic Instancing
+                      │
+                      ▼
+        Parallel Chunk Generator
+                      │
+                      ▼
+        Binary Cache Lookup
+                      │
+          Cache Hit? ─────────► Skip
+                      │
+                     No
+                      ▼
+        Parallel Code Generator
+                      │
+                      ▼
+        Source Maps + Minification
+                      │
+                      ▼
+              Production Output
+              
+              
+              
+              
+              
+             code flow Architecture
+             
+             React Source
+		      │
+		      ▼
+		Lexer
+		      │
+		      ▼
+		Parser
+		      │
+		      ▼
+		AST
+		      │
+		      │──────────────┐
+	                        ▼            │
+		AST Cache            │
+		      │              │
+		      ▼              │
+		Binary IR Generator  │
+		      │              │
+		      ▼              │
+		Binary IR Cache      │
+		      │              │
+		      ▼              │
+		Dependency Graph Generator
+		      │
+		      ▼
+		Dependency Graph Cache
+		      │
+		      ▼
+		Bundler
+		      │
+		      ▼
+		JavaScript
+		
+		
+		
+		
+		Architecture after Optimization Planner:
+
+	                    React + TypeScript
+		                    │
+				      ▼
+	──────────────────────────────────────────────────────────
+		             Nova Compiler
+	──────────────────────────────────────────────────────────
+		                    │
+		            SIMD Lexer
+		                    │
+		            Parallel Parser
+		                    │
+		                   AST
+		                    │
+		            Semantic Analyzer
+		                    │
+		┌───────────────────┴───────────────────┐
+		▼                                      		▼
+	   Binary IR Generator                 Dependency Graph
+		│                                       │
+		▼                                       		▼
+	 Binary IR Cache                     Dependency Graph Cache
+		│
+		▼
+	──────────────────────────────────────────────────────────
+		  Compiler Optimization Engine
+	──────────────────────────────────────────────────────────
+	• Dead Code Elimination
+	• Constant Folding
+	• Static Component Detection
+	• Symbol Optimization
+	• Import / Export Analysis
+	• Binary IR Cleanup
+	• Semantic Validation
+		│
+		▼
+	──────────────────────────────────────────────────────────
+		    Optimization Planner
+	──────────────────────────────────────────────────────────
+	• Pass Scheduler
+	• Safety Checker
+	• Cost Analyzer
+		│
+		▼
+	──────────────────────────────────────────────────────────
+		Application Optimization Engine
+	──────────────────────────────────────────────────────────
+	• Render Optimization
+	• State Optimization
+	• Route Splitting
+	• Bundle Optimization
+	• CSS Optimization
+	• Asset Optimization
+	• Memory Optimization
+	• Lazy Loading
+	• Network Optimization
+	• List Virtualization (Opt-In)
+		│
+		▼
+		          Optimized Binary IR
+		                    │
+	──────────────────────────────────────────────────────────
+		            Nova Bundler
+	──────────────────────────────────────────────────────────
+	• Reads Binary IR directly
+	• Uses Dependency Graph Cache
+	• Incremental Bundling
+	• Parallel Chunk Generation
+	• Binary Cache
+	• Asset Pipeline
+	• Source Maps
+	• Minification
+		│
+		▼
+        Optimized JavaScript
+            	│	
+                          ▼
+          Production Application
